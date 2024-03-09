@@ -6,14 +6,18 @@
   "author": "Paweł Kowaluk <pensjonatus@gmail.com>",
   "license": "MIT",
   "packageManager": "yarn@4.1.1",
-  "dependencies": {
-    "@types/node": "^20.11.25",
-    "dotenv": "^16.4.5",
-    "ts-node": "^10.9.2",
-    "tslib": "^2.6.2",
-    "typescript": "^5.4.2"
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   },
   "scripts": {
     "check": "ts-node src/exercises/c01l01.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "langchain": "^0.1.25",
+    "openai": "^4.28.4"
   }
 }
