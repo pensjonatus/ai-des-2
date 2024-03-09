@@ -1,0 +1,19 @@
+{
+  "name": "ai-devs-2",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "git@github.com:pensjonatus/ai-devs-2.git",
+  "author": "Paweł Kowaluk <pensjonatus@gmail.com>",
+  "license": "MIT",
+  "packageManager": "yarn@4.1.1",
+  "dependencies": {
+    "@types/node": "^20.11.25",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.2"
+  },
+  "scripts": {
+    "check": "ts-node src/exercises/c01l01.ts"
+  }
+}
