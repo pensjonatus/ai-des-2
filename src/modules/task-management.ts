@@ -6,7 +6,39 @@ type TokenResponse = {
   token: string;
 };
 
-export async function getToken(taskName: string): Promise<string> {
+type Task =
+  | "inprompt"
+  | "helloapi"
+  | "blogger"
+  | "moderation"
+  | "getinfo"
+  | "maxtokens"
+  | "category"
+  | "books"
+  | "injection"
+  | "optimize"
+  | "fixit"
+  | "parsehtml"
+  | "embedding"
+  | "functions"
+  | "liar"
+  | "rodo"
+  | "scraper"
+  | "search"
+  | "whisper"
+  | "whoami"
+  | "people"
+  | "knowledge"
+  | "tools"
+  | "gnome"
+  | "ownapi"
+  | "ownapipro"
+  | "meme"
+  | "optimaldb"
+  | "google"
+  | "md2html";
+
+export async function getToken(taskName: Task): Promise<string> {
   const response = await fetch(`https://zadania.aidevs.pl/token/${taskName}`, {
     method: "POST",
     headers: {

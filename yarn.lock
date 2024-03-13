@@ -309,6 +309,38 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@langchain/core@npm:~0.1.44":
+  version: 0.1.44
+  resolution: "@langchain/core@npm:0.1.44"
+  dependencies:
+    ansi-styles: "npm:^5.0.0"
+    camelcase: "npm:6"
+    decamelize: "npm:1.2.0"
+    js-tiktoken: "npm:^1.0.8"
+    langsmith: "npm:~0.1.7"
+    ml-distance: "npm:^4.0.0"
+    p-queue: "npm:^6.6.2"
+    p-retry: "npm:4"
+    uuid: "npm:^9.0.0"
+    zod: "npm:^3.22.4"
+    zod-to-json-schema: "npm:^3.22.3"
+  checksum: 10c0/3fdba2753eb3e22c9a105c241a28bfa2f9c7b0b409e32af2a7d3fddb2671608b3744dc960020ff6b1b17755f8a423d1cc3063afc06fd4c2dadd5f4a8ea7bde4e
+  languageName: node
+  linkType: hard
+
+"@langchain/openai@npm:^0.0.19":
+  version: 0.0.19
+  resolution: "@langchain/openai@npm:0.0.19"
+  dependencies:
+    "@langchain/core": "npm:~0.1.44"
+    js-tiktoken: "npm:^1.0.7"
+    openai: "npm:^4.26.0"
+    zod: "npm:^3.22.4"
+    zod-to-json-schema: "npm:^3.22.3"
+  checksum: 10c0/9fe0fd1355c3ffdb508f8a2257b04f2491763ab3c664bdaefe735e02448956fec69785ab8f5a53e2dc04a93a488b32c88600e194bdb9679af488cc10d4bec9cb
+  languageName: node
+  linkType: hard
+
 "@langchain/openai@npm:~0.0.14":
   version: 0.0.18
   resolution: "@langchain/openai@npm:0.0.18"
@@ -395,6 +427,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ai-devs-2@workspace:."
   dependencies:
+    "@langchain/openai": "npm:^0.0.19"
     bun-types: "npm:latest"
     dotenv: "npm:^16.4.5"
     langchain: "npm:^0.1.25"
